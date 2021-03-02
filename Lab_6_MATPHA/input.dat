@@ -1,0 +1,40 @@
+class Main 
+{
+	long add(long a, long b)
+	{
+		return a + b;
+	}
+
+	short pow2(short d)
+	{
+		return d * d;
+	}
+
+	long func()
+	{
+		long var = 10;
+		var = var - 10;
+		var = var - var + var + 1;
+		return add(var, 5);
+		
+	}
+
+	long funcWithLoop()
+	{
+		long varForLoop = 0;
+		do
+		{
+			varForLoop = varForLoop + 2;
+		} while (varForLoop <= 10);
+		return varForLoop;
+	}
+
+	long main()
+	{
+		long varInMain = 10;
+		varInMain = add(101, 4);
+		varInMain = pow2(10);
+		varInMain = func();
+		varInMain = funcWithLoop();
+	}
+};
